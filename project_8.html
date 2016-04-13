@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nathaniel Sena</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Work</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header1">360 Video Rig for Eken H3 Action Camera<br>
+                    <small>Personal Project
+                    </small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/360_rig_2.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Plans and Modeling</h3>
+                <h4>Choosing the Camera</h4>
+                <p>My friend and I who are doing our South East Asia trip decided we could not live without taking some 360 video of it. We have seen more and more products coming out to serve this need, but many seem to cut corners in certain aspects. We have seen those which allow you to rotate the video, but truly are not 360. Others offer 360 video, but have very noticeable seams from having too few cameras. We kept all this in mind as we decided to opt for a classic 6 camera design, but wanted to insure we could do it affordably. In looking for cheap camera options, we considered my SJ4000 clone. It shoots in 1080p at 30 frames a second, but I knew it did not handle low light well, and 360 video tends to appear in very low resolution when stitched together, so I figured better cameras might be warranted. Six GoPro 4's would cost over $2000, but I have found something of quality in the Eken H3.</p>
+                <p>The Eken H3 offers the quality and features of cameras like the Yi and the Hero 4 at a $70 price point. It features screens on the front and back( which are important for determining if you are actually recording on each device without taking it all apart), wifi connectivity, easily swappable batteries, and 2.7k video at 24fps as well as 1080p at 60fps. This will allow us to experiment with stitching at different frame rates and resolutions. Considering that Youtube has maximum resolution specs of 4k at 60fps, we will have to learn whether 6 1080p cameras can stitch together a 4k image or simply opt for 4k at 24fps if 2.7k per frame allows that. The only cons of the H3 in respect to the Hero 4 and Yi are a lack of syncing with a remote as well as lower quality video. The H3's pros over the other cameras include the swappable battery, price, resolution, and screens( 2" on back and almost 1" on the front). All in all, I am very happy with the choice and am excited to check whether the 2.4ghz remote can somehow be linked to multiple cameras at once.</p>
+                <h4>Calipers to the Rescue</h4>
+                <p>This was my first time ever using calipers, and I was pleasantly surprised to learn how well even a cheap pair works. Despite having many dimensions that would not allow perfectly accurate dimensioning due to the caliper design, my first attempt of a prototype ended up fitting the case extremely well. I plan on slightly changing it to account for a couple dimensioning errors, but still found that the waterproof shell still fit snugly in the case. </p>
+                <p>My model was designed to be as light weight as possible as I want to be able to easily lift it with my 450 size quad. I printed orginally at 25% infill but may lower this down to 10%. It was printed on a Makerbot Replicator 2 with .2mm resolution in ABS and took just under 5 hours to print. </p>
+                <h4>Full Model and Prototype</h4>
+                <img width="100%" src="img/360_rig_1.png">
+                <img width="100%" src="img/360_rig_3.png">
+                <img width="100%" src="img/360_rig_4.png">
+                <h4>A Few More Words On Design</h4>
+                <p>I modeled the design with a hole directly in the middle with the same diameter as the camera's protruding lense. This was intentional to be able to easily test to see if the lense ends up directly in the center. I did this to insure that all the cameras are in perfect alignment. My first print ended up with that hole a couple milimeters up and to the right of the camera's lense. I desire to test how this error affects the stitching of the images, but to save filament I will delay that in favor of greater certainty in stitching quality.</p>
+                <p>While not pictured, I printed the piece with two additional holes just below the the circles. These holes are there to give the frame the capability to capture sound when the housing uses its alternate backing, which lets in sound. Other notable features include the 4 holes, one on each edge, which allow each individual piece to connect to the rest. While it may have been capable to print the entire rig in less pieces, the set up allows for easier swappability should any piece break. Additionally, each whole is the diameter of the typical pin used on GoPro cameras and the Eken H3. Should I need any of these pieces, they can be taken from the rig and later replaced.</p>
+                <p>A piece I have yet to make for this is a corner design which will allow the rig to screw into typical mounts. I considered printing this on each side piece so that every corner would have one, but I believe this may add unnecessary weight.</p>
+                <p>A design I wish I could have implemented is to use the holes from the waterproof case as one of the side holes. Doing this would allow me to use when less screw and nut on each side. However, it does not extend far enough down to make each side square.</p>
+                <img width="100%" src="img/360_rig_5.png">
+                <img width="100%" src="img/360_rig_6.png">
+                <h4>First Prototype</h4>
+               <img width="100%" src="img/rig_1.jpg">
+               <img width="100%" src="img/rig_2.jpg">
+               <img width="100%" src="img/rig_3.jpg">
+               <img width="100%" src="img/rig_4.jpg">
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</body>
+</html>

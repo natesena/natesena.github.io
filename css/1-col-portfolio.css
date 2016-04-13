@@ -1,0 +1,64 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+	font-family:'LeagueGothic';
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size:4em;
+}
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#cover {
+	background-image: url('../img/Portrait.jpg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 500px;
+
+}
+
+.page-header {
+	margin:0;
+	padding:200px 50px 50px 0 ;
+	color: #000;
+}
+
+.page-header small {
+	color: #fff;
+	font-size: .5em;	
+}
+
+h1 .page-header {
+	color: #fff;
+}
+
+h1 .page-header1 {
+	color: #000;
+}
