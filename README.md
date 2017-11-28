@@ -1,2 +1,1 @@
-# Welcome to Nate's Personal Site Read Me!
-
+Welcome to nate sena's site readme!
