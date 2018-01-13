@@ -1082,7 +1082,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -3022,7 +3022,7 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3119,19 +3119,21 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #000;
+  border-color: #000;
+  margin-left: 8px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
+  background-color: #555758;
   border-color: #122b40;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #353637;
+  border-color: #85bff1;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .btn-primary:active,
 .btn-primary.active,
