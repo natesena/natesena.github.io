@@ -84,3 +84,16 @@ h1 .page-header1 {
 	-webkit-transform: translateX(8px);
 	transform: translateX(8px);
   }
+
+  .project {
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+  }
+  .project:hover {
+	-webkit-transform: translateX(8px);
+	transform: translateX(8px);
+  }
