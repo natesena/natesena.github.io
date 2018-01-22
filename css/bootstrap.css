@@ -44,6 +44,11 @@ template {
 }
 a {
   background-color: transparent;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 }
 a:active,
 a:hover {
@@ -4637,7 +4642,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color:rgba(255,255,255, 0.2);
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
