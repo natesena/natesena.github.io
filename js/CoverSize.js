@@ -3,7 +3,11 @@ $(window).on('resize', sizeToFit)
 
 function sizeToFit(){
     var coverEl = document.getElementById('cover')
-    if(window.innerWidth < 650){
+    if(window.innerWidth < 405 ){
+        var slide = window.innerWidth - 900
+        coverEl.style.backgroundPositionX = slide + "px"
+    }
+    else if(window.innerWidth < 650){
         var slide = window.innerWidth - 710
         coverEl.style.backgroundPositionX = slide + "px"
     }
