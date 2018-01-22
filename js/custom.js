@@ -2,7 +2,6 @@
 var navEl = document.getElementById('theNavBar')
 var contentEl = document.getElementById('content-container')
 
-console.log("nav height", navEl.clientHeight)
 
 window.addEventListener('scroll', scrollTopDisappear)
 var lastScroll = 0
@@ -27,6 +26,5 @@ function scrollTopDisappear(){
 }
 
 function scrollToTop(){
-  console.log('hey')
   $('html,body').animate({ scrollTop: 0 }, 'slow');
 }
