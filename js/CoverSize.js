@@ -1,4 +1,7 @@
-$(window).on('resize', ()=>{
+// This should run on load and resize
+$(window).on('resize', sizeToFit)
+
+function sizeToFit(){
     var coverEl = document.getElementById('cover')
     if(window.innerWidth < 650){
         var slide = window.innerWidth - 710
@@ -7,4 +10,6 @@ $(window).on('resize', ()=>{
     else{
         cover.style.backgroundPositionX = 0
     }
-})
+}
+
+sizeToFit()
