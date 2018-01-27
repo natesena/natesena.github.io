@@ -44,14 +44,24 @@
         <!-- /.container -->
     </nav>
     <div id="page-content">
-    <div class="row" id="cover">
-        <div class="col-lg-6 col-sm-6 cover-text">
-            <h1 class="page-header" id="gradient">Nathaniel Sena<br>
-                <small>Immersive Web Developer living in Los Angeles</small>
+        <div id="iframe-container">
+            <iframe id="three-sixty" src="webvr.html" frameborder="0">
+                <!-- <div class="col-lg-6 col-sm-6 cover-text">
+                    <h1 class="page-header" id="gradient">Nathaniel Sena<br>
+                        <small>Immersive Web Developer living in Los Angeles</small>
+                        </h1>
+                </div> -->
+                
+            </iframe >
+            <div id="inner-frame">
+                <h1 class="page-header">Nathaniel Sena<br>
+                    <small>
+                        Immersive Web Developer
+                        Los Angeles, California
+                    </small>
                 </h1>
+            </div>
         </div>
-    </div>
-
     <!-- Page Content -->
     <div class="container" id="content-container">
         <!-- Page Heading -->
@@ -464,10 +474,10 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
+    <script src="./js/iframeManager.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/CoverSize.js"></script>
+    <!-- <script src="js/CoverSize.js"></script> -->
     <!-- <script src="js/AnimatedColor.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
