@@ -11,9 +11,17 @@ function scrollTopDisappear(){
     if(scrollMeter > navEl.clientHeight){
       //console.log('navbar should be colored')
       $('.navbar-inverse').addClass("navbar-colored")
+      var links = document.querySelector("nav").querySelectorAll("a")
+      links.forEach((link)=>{
+        link.style.textShadow = "none"
+      })
     }
     else{
       $('.navbar-inverse').removeClass("navbar-colored")
+      var links = document.querySelector("nav").querySelectorAll("a")
+      links.forEach((link)=>{
+        link.style.textShadow = "1px 1px #9d9d9d"
+      })
     }
     //console.log('show nav')
     $('.navbar').fadeIn()

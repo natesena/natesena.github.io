@@ -3126,6 +3126,7 @@ fieldset[disabled] .btn-default.focus {
   background-color: #000;
   border-color: #000;
   margin-left: 8px;
+  margin-bottom: 3px
 }
 .btn-primary:focus,
 .btn-primary.focus {
