@@ -134,12 +134,15 @@ h1 .page-header1 {
 	-webkit-transition-property: transform;
 	transition-property: transform;
 	-webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  	transition-timing-function: ease-out;
   }
 
   .btn-skill:hover, .btn-skill:focus, .btn-skill:active{
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
+  }
+  .btn-skill-active{
+	  border-bottom: 2px solid #9B0621
   }
   #iframe-container{
 
@@ -159,3 +162,4 @@ h1 .page-header1 {
 	  z-index: 2;
 	  top: 100px
   }
+  
