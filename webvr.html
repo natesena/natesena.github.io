@@ -5,24 +5,26 @@
 		<title>VR_Broswser</title>
 		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>	
 	</head>
-	<body>
+	<body onload="check">
 		<a-scene>
 			<a-sky src="Video/web-background-final-4k-8mbps.mp4" rotation="0 -90 0">
 			</a-sky>
-			<a-image position="0 2 -3" src="./img/360-icon.png">
+			<a-image id="icon" position="0 2 -3" src="./img/360-icon.png">
 				<a-animation
-				attribute="rotation"
-				fill="forwards"
-				dur="5000"
-				to="0 360 0"
-				repeat="0"
+					attribute="rotation"
+					begin="load"
+					fill="forwards"
+					dur="10000"
+					to="0 360 0"
+					repeat="0"
 				></a-animation>
 				<a-animation
-				attribute="visible"
-				dur="5000"
-				from="true"
-				to="false"
-				repeat="0"
+					attribute="visible"
+					begin="load"
+					dur="10000"
+					from="true"
+					to="false"
+					repeat="0"
 				></a-animation>
 				<a-animation
 					attribute="position"
@@ -33,16 +35,18 @@
 					repeat="indefinite">
 				</a-animation>
 			</a-image>
-			<!-- <a-text align="center" position="0 1.5 -2" value="Nathaniel Sena">
-				<a-animation
-					attribute="position"
-					direction="alternate"
-					dur="2000"
-					from="0 1.5 -2"
-					to="0 1.75 -2"
-					repeat="indefinite">
-				</a-animation>
-			</a-text> -->
 		</a-scene>
 	</body>
+	<script>
+		setTimeout(check, 10000)
+		function check(){
+			if(document.readyState == 'complete'){
+				console.log("loaded!")
+				document.querySelector('#icon').emit('load')
+			}
+		}
+			
+		
+		
+	</script>
 </html>
