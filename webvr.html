@@ -3,11 +3,46 @@
 	<head>
 		<meta name="apple-mobile-web-app-capable" />
 		<title>VR_Broswser</title>
-		<script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>	
+		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>	
 	</head>
 	<body>
 		<a-scene>
-			<a-sky src="Video/web-background-final-4k-8mbps.mp4" rotation="0 -90 0"></a-sky>
+			<a-sky src="Video/web-background-final-4k-8mbps.mp4" rotation="0 -90 0">
+			</a-sky>
+			<a-image position="0 2 -3" src="./img/360-icon.png">
+				<a-animation
+				attribute="rotation"
+				fill="forwards"
+				dur="5000"
+				to="0 360 0"
+				repeat="0"
+				></a-animation>
+				<a-animation
+				attribute="visible"
+				dur="5000"
+				from="true"
+				to="false"
+				repeat="0"
+				></a-animation>
+				<a-animation
+					attribute="position"
+					direction="alternate"
+					dur="2500"
+					from="0 2 -3"
+					to="0 2.25 -3"
+					repeat="indefinite">
+				</a-animation>
+			</a-image>
+			<!-- <a-text align="center" position="0 1.5 -2" value="Nathaniel Sena">
+				<a-animation
+					attribute="position"
+					direction="alternate"
+					dur="2000"
+					from="0 1.5 -2"
+					to="0 1.75 -2"
+					repeat="indefinite">
+				</a-animation>
+			</a-text> -->
 		</a-scene>
 	</body>
 </html>
